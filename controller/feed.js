@@ -1,10 +1,19 @@
 exports.getPosts = (req, res, next) => {
     res.status(200).json({
-        posts: [{title: 'first post', content: 'this is the first post!'}] 
+        posts: [{
+            _id: '1',
+            title: 'first post', 
+            content: 'this is the first post!', 
+            imageUrl: 'images/duck.jpg',
+            creator:{
+                name: 'Harsh'
+            },
+            createdAt: new Date()
+        }] 
     });
 };
 
-exports.postPosts = (req, res, next) => {
+exports.createPosts = (req, res, next) => {
     //create post
     const title = req.body.title;
     const content = req.body.content;
