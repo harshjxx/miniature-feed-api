@@ -1,24 +1,30 @@
 {
-  "name": "basic-rest_api",
+  "name": "nodejs-complete-guide",
   "version": "1.0.0",
-  "description": "basic rest api implementation",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
   },
-  "author": "harshavardhan jadhav",
+  "repository": {
+    "type": "git",
+    "url": "https://git-codecommit.us-east-1.amazonaws.com/v1/repos/udemy-course-nodejs-complete"
+  },
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "express-validator": "^6.6.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.10.1",
-    "multer": "^1.4.2"
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "express-validator": "^5.3.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.2",
+    "multer": "^1.4.0",
+    "socket.io": "^2.1.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^1.18.4"
   }
 }
